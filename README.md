@@ -163,5 +163,9 @@ advanced charts and an interactive KPI dashboard.
 ---
 
 ## 👤 Author
-
 **Vathada Swaroop Kumar**
+
+- LinkedIn: [Swaroop Kumar Vathada](https://www.linkedin.com/in/swaroopkumarvathada)
+
+  Platform: Agileology (EdTech & Upskilling Platform)
+  Advanced Excel Mini Project — Retail Store Sales Analysis
